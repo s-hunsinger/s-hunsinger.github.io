@@ -1,0 +1,152 @@
+/* hunsinger - sitewide styles */
+
+/* 1. page body */
+
+body {
+    background-color: #fcfbf6;
+    font-family: "et-book", "Georgia", serif;
+    margin-bottom: 3rem;
+}
+
+/* Adds dark mode (from Tufte CSS) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #dedede;
+    }
+
+    a {
+        color: #d0d0d0;
+    }
+
+    #topbar a {
+        color: rgb(88, 88, 88);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    a {
+        color: rgb(88, 88, 88);
+    }
+
+    #topbar a {
+        color: #d0d0d0;
+    }
+}
+
+/* 2. Text styles */
+
+h1 {
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+p {
+    font-size:19px;
+    /* color: rgb(22, 22, 22); */
+}
+
+#topbar {
+    margin-top: -0.5em;
+    margin-left: -2em;
+    padding-top: none;
+}
+
+/*
+a {
+    color: rgb(10, 32, 143); 
+}
+*/
+
+#topbar a {
+    /* color: rgb(179, 179, 179); */
+    /* color: rgb(22, 22, 22); */
+    /* text-decoration: none; */
+    padding-right: 1em;
+    line-height: 150%;
+}
+
+#topbar a:active {
+    color: rgb(159, 159, 159);
+}
+
+#content {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2em;
+    max-width: 100em;
+}
+
+.center-text {
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 50em;
+}
+
+.center-text p {
+    font-size: 19.5px;
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height: 150%;
+    max-width: 50em;
+}
+
+#content img {
+    width: 100%;
+}
+
+.center-text img {
+    width: 100%;
+}
+
+#topbar ul {
+    list-style: none;
+}
+
+#topbar li {
+    display: inline;
+    padding-right: 1em;
+    color: rgb(189, 189, 189);
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book-roman-old-style";
+    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
